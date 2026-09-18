@@ -4,11 +4,11 @@ const app = express();
 app.use(express.json());
 
 const pool = mysql.createPool({
-  host: 'YOUR-TIDB-HOST.tidbcloud.com',
+  host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
   port: 4000,
-  user: 'your_user',
-  password: 'STRONG_PASSWORD',
-  database: 'your_db',
+  user: 'ET8kyAFN4ZTeTkP.root',
+  password: 'Uf3NVjkweRcnuTr1',
+  database: 'expense_tracker',
   waitForConnections: true,
   connectionLimit: 5,
   ssl: { minVersion: 'TLSv1.2' }
